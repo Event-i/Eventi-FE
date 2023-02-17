@@ -3,7 +3,8 @@ import Image from "next/image";
 import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
 import NavigationBar from "../components/NavigationBar/NavigationBar";
-import ReactMap from "@/components/NavigationBar/ReactMap/ReactMap";
+import ReactMap from "@/components/ReactMap/ReactMap";
+import TemporaryDrawer from "@/components/Drawer/Drawer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,6 +19,7 @@ export default function Home() {
       </Head>
       <NavigationBar />
       <ReactMap />
+      <TemporaryDrawer />
     </>
   );
 }
